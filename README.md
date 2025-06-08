@@ -9,8 +9,7 @@ Example of Selenium Webdriver end-to-end tests on the [Webshop](https://github.c
 ```
 > python -m venv venv
 > .\venv\Scripts\activate
-> pip install -U selenium
-> pip install geckodriver
+> pip install -r requirements.txt
 ```
 3. Run the tests:
 ```
