@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 BASE_URL = 'http://127.0.0.1:5500/'
-USERNAME = 'test@kea.dk'
+USERNAME = 'test@ek.dk'
 PASSWORD = 'Test'
 
 driver = webdriver.Firefox()
@@ -18,6 +18,7 @@ driver.find_element('id', 'txtEmail').send_keys(USERNAME)
 driver.find_element('id', 'txtPassword').send_keys(PASSWORD)
 driver.find_element('id', 'txtRepeatPassword').send_keys(PASSWORD)
 driver.find_element(By.CSS_SELECTOR, '#frmSignup input[type="submit"]').click()
+driver.find_element(By.CSS_SELECTOR, '#alert header button').click()
 
 #
 # Log in
@@ -95,7 +96,7 @@ XPATH_EMPTY_CART = '//dialog[@id="alert"]//p'
 alert_paragraph = driver.find_element(By.XPATH, XPATH_EMPTY_CART)
 assert 'empty' in alert_paragraph.text
 
-driver.find_element(By.CSS_SELECTOR, '#alert a[title="Close Alert"]').click()
+driver.find_element(By.CSS_SELECTOR, '#alert header button').click()
 
 #
 # Log out

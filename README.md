@@ -1,7 +1,7 @@
 # Webshop End-to-End Test
 
 ## Purpose
-Example of Selenium Webdriver end-to-end tests on the [Webshop](https://github.com/arturomorarioja/js_webshop) sample. The test is coded in Python and uses Firefox's Gecko driver.
+Example of Selenium Webdriver end-to-end tests on the [EK Webshop](https://github.com/arturomorarioja/js_webshop) sample. The test is coded in Python and uses Firefox's Gecko driver.
 
 ## Instructions
 1. The webshop is expected to run at `http://127.0.0.1:5500/`. This value can be changed in `test.py`.
